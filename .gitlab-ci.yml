@@ -1,9 +1,7 @@
-stages:
-  - test
 test:
   stage: test
   before_script:
     - pip install -U scipy numpy scikit_learn --user
    
-script:
+  script:
     - python dgemm_idp.py
